@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#office {
+    margin-top: 70px;
+    margin-left: 70px;
+    padding-top: 30px;
+}
+#vertical {
+    margin-top: 70px;
+    padding-bottom: 30px;
+}
+
+.two {
+    display: inline-block;
+    
+}
+.two {
+    width: 50%;
+}
+hr {
+    border-style: none;
+    width: 20px;
+    border-top: 1px solid black;
+    margin-left: 70px;
+}
+hr, .line h5 {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 70px;
+}
+.line h5 {
+    padding-left: 10px; 
+}
+h2 {
+    margin-top: 10px;
+    margin-left: 70px;
+}
+section {
+    width: 50%;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.two p {
+    text-align: justify;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 20px;
+    padding-left: 80px;
+    margin-right: 180px;
+    list-style-type: none;
+    justify-content: space-around;
+    grid-row-gap: 20px;
+}
+li:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    left: 705px;
+    margin-right: 10px;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+li::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    right: 365px;
+    margin-right: 10px;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+button {
+    background-color: black;
+    padding: 10px 35px;
+    color: white;
+    border: none;
+    margin: 100px 65px;
+    border-radius: 5px;
+}
+.bus {
+    display: inline-block;
+    margin-left: 150px;
+    columns: 2;
+}
+.line2 {
+    display: block;
+}
+.line2 hr {
+    border-style: none;
+    width: 20px;
+    border-top: 1px solid black;
+    margin-left: 70px;
+}
+.line2 hr, .line2 h5 {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 50px;
+}
+.line2 h5 {
+    padding-left: 10px;
+}
+.line2 h2 {
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.bus p {
+    margin-top: 50px;
+    font-size: 18px;
+    margin-left: 60px;
+}
+.bus, .btn {
+    vertical-align: middle;
+}
+.btn {
+    margin-top: 50px;
+    margin-left: 100px;
+}
