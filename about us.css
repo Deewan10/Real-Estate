@@ -4,6 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+#find {
+
+}
+nav h4 {
+    margin-left: 5px;
+    font-size: large;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav img {
+    margin-left: 10px;
+}
+nav {
+    display: inline-flex;
+    padding-block: 15px;
+
+}
 #office {
     margin-top: 70px;
     margin-left: 70px;
@@ -39,7 +57,7 @@ h2 {
     margin-top: 10px;
     margin-left: 70px;
 }
-section {
+.one {
     width: 50%;
 }
 body {
@@ -47,7 +65,7 @@ body {
     flex-wrap: wrap;
 }
 .two p {
-    text-align: justify;
+    word-spacing: 0.8em;
     margin-left: 70px;
     margin-top: 20px;
 }
@@ -61,37 +79,23 @@ ul {
     list-style-type: none;
     justify-content: space-around;
     grid-row-gap: 20px;
+    word-spacing: 0.4em;
 }
-li:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: blue;
-    border-radius: 50%;
-    left: 705px;
-    margin-right: 10px;
-    margin-top: 4px;
+
+li::before  {
+    content: "\2022";
+    color: blue;
+    position: relative;
+    font-size: 42px;
     vertical-align: middle;
-}
-li::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: blue;
-    border-radius: 50%;
-    right: 365px;
-    margin-right: 10px;
-    margin-top: 4px;
-    vertical-align: middle;
+    margin-right: 5px;
 }
 button {
     background-color: black;
-    padding: 10px 35px;
+    padding: 15px 45px;
     color: white;
     border: none;
-    margin: 100px 65px;
+    margin: 50px 65px;
     border-radius: 5px;
 }
 .bus {
@@ -99,36 +103,184 @@ button {
     margin-left: 150px;
     columns: 2;
 }
-.line2 {
+.line2, .line4 {
     display: block;
+    margin-bottom: 30px;
 }
-.line2 hr {
-    border-style: none;
-    width: 20px;
-    border-top: 1px solid black;
-    margin-left: 70px;
-}
-.line2 hr, .line2 h5 {
+
+.line2 hr, .line2 h5, .line4 hr, .line4 h5 {
     vertical-align: middle;
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 5px;
 }
-.line2 h5 {
+.line2 h5, .line4 h5 {
     padding-left: 10px;
 }
-.line2 h2 {
+.line2 h2, .line4 h2 {
     margin-top: 10px;
     margin-left: 70px;
 }
 .bus p {
-    margin-top: 50px;
+    margin-top: 5px;
     font-size: 18px;
-    margin-left: 60px;
+    margin-left: 30px;
+    word-spacing: 0.3em;
 }
 .bus, .btn {
     vertical-align: middle;
 }
 .btn {
-    margin-top: 50px;
+    margin-top: 5px;
     margin-left: 100px;
+}
+.blog {
+    margin-top: 10px;
+}
+article {
+    width: 350px;
+    height: 400px;
+    border: none;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    padding-block-end: 20px;
+}
+.badge {
+    width: 100%;
+    background-color: black;
+    height: 60vh;
+    margin-top: 20px;
+
+}
+.btn2 {
+    padding: 15px 30px;
+    background-color: rgb(183, 226, 240);
+    color: blue;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+.blog p {
+    border-bottom: 1px solid black;
+    width: 130px;
+    padding-bottom: 5px;
+    margin-left: 0px;
+}
+.blog h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.blog p::before {
+    content: "\2022";
+    color: blue;
+    position: relative;
+    font-size: 24px;
+    vertical-align: auto;
+    margin-right: 5px;
+}
+.line3 hr {
+    border-style: none;
+    width: 20px;
+    border-top: 1px solid white;
+    margin-left: 70px;
+}
+.line3 h2 {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 70px
+}
+.line3 h5 {
+    color: #ffffff;
+    padding-left: 10px;
+}
+.line3 {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.line3 hr, .line3 h5, .line3 h3 {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 35px;
+}
+.line3 h3 {
+    color: #ffffff;
+    margin-left: 1000px;
+}
+.line3 h3:active {
+    color: #a9a7a7;
+}
+.reviews {
+    color: #ffffff;
+    display: flex;
+    padding-inline-start: 70px;
+    justify-content: space-between;
+}
+
+.man {
+   margin-left: 10px;
+}
+.reviews h4::before {
+    content: "\2022";
+    color: #ffffff;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.reviews h4 {
+    font-size: 16px;
+    margin-top: 80px;
+}
+.reviews p {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.faq p {
+    margin-left: 70px;
+    margin-top: 30px;
+}
+/*/ .man, .reviews img {
+    background-color: rgba(128, 128, 128, 0.546);
+    border: 2px solid gray;
+    padding-left: 10px;
+}/*/
+.btnn {
+    margin-top: 30px;
+}
+.faq {
+    margin-right: 510px;
+}
+footer {
+    display: flex;
+    width: 100%;
+    padding-block-start: 30px;
+    margin-right: 100px;
+}
+.questions{
+    display: inline;
+    text-align: justify;
+}
+.questions p {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    font-stretch: normal;
+}
+.questions h4::before {
+    content: "\2022";
+    color: blue;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+h6 {
+    margin-right: 0px;
+    margin-top: 14px;
+    font-size: 10px;
+    font-stretch: extra-expanded;
+}
+summary {
+    cursor: pointer;
+    font-size: medium;    
 }
